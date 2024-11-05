@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+:root {
+    --cor-primaria: #c9c3c3;
+    --branco: #ffffff;
+    --cor-de-fundo: #062031;
+    --cor-secundaria: #161341;
+    --cor-terciaria: #54565e;
+    --cor-ouro: gold;
+    
+    --fonte-primaria: Quintessential;
+    --fonte-secundaria: WindSong;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+}
+
+main {
+    background-image: url(./images/a\ thousand\ seas\ fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+header {
+    background-color: var(--cor-secundaria);
+    padding: 20px;
+    margin-top: 8px;
+    border: 1px solid var(--cor-ouro);
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.397);
+}
+
+a {
+    text-decoration: none;
+    color: var(--branco);
+    transition: color 0.5s ease;
+}
+
+i {
+    font-style: italic;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: var(--fonte-primaria);
+    font-size: 30px;
+}
+
+.menu a:hover {
+    color: var(--cor-ouro);
+    text-shadow: 4px 4px 10px rgba(128, 93, 30, 0.596);
+    transition: 0.5s ease;
+}
+
+.menu:hover a:not( :hover) {
+    color: var(--cor-primaria);
+    transition: 0.5s ease;
+}
+
+.banner-img{
+    width: 85vh;
+    margin: 35px 5px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--branco);
+    font-family: var(--fonte-primaria);
+    font-size: 25px;
+    margin: 0 50px;
+}
+
+.banner p {
+    padding: 1em 8em;
+    text-align: center;
+    text-shadow:
+        -1px 1px 2px #000;
+}
+
+.banner-saiba-mais {
+    background-color: var(--cor-secundaria);
+    color: var(--branco);
+    padding: 30px;
+    border-radius:0 0 120px 120px;
+    border: 1px solid var(--cor-ouro);
+    font-family: var(--fonte-primaria);
+    font-size: 25px;
+    transition: 0.5s ease;
+}
+
+.banner-saiba-mais:hover {
+    color: var(--cor-ouro);
+    border-radius: 100px;
+    transform: scale(1.20);
+    transition: 0.5s ease;
+}
+
+.divisao {
+    background-image: url("./images/ondas\ divisao.png");
+    background-repeat: repeat-x;
+    background-position: left center;
+    width: 120em;
+    height: 20em;
+    margin-top: 1.5em;
+}
+
+/*.personagens-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 80%;
+    margin: 0 12em;
+}*/
+
+
+/*.personagem-card {
+    margin: 0 2em 2em 2em;
+}
+
+.personagem-nome-card {
+    top: 4.5em;
+    position: relative;
+    z-index: 1;
+    background-color: var(--cor-secundaria);
+    color: var(--branco);
+    border: 1px solid gold;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.397);
+    padding: 2.3em 0.5em;
+    margin: 8px;
+    transition: transform 1s ease;
+}
+
+.personagem-nome {
+    position: relative;
+    z-index: 2;
+    font-family: var(--fonte-primaria);
+    font-size: 50px;
+    text-align: center;   
+}
+
+.personagem-img {
+    position: absolute;
+    background-image: url("./images/Draz.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: all 3s ease;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: -1;
+    left: 3rem;
+    top: 50%;
+}
+
+.personagem-detalhes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.personagem-detalhes p {
+    color: var(--branco);
+    font-family: var(--fonte-primaria);
+    font-size: 20px;
+    text-align: justify;
+    padding: 50px;
+    margin: 1em;
+    text-shadow:
+        -1px 1px 2px #000;
+}
+
+.personagem-nome:hover .personagem-img {
+    width: 4em;
+    height: 7.2em;
+    transform: translate(220%, -50%) scale(1);
+    z-index: 1;
+}*/
+
+.personagens-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.personagem-img {
+    background: #ffffff2f;
+    border-radius: 8px;
+    padding: 3px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 20em;
+    width: 190px;
+    transition: 0.1s ease;
+}
+
+.image-silhueta, .image-visivel {
+    position: absolute; /* Faz com que as imagens se sobreponham */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: opacity 1s ease-in-out; /* Suaviza a transição de opacidade */
+}
+
+.image-silhueta {
+    opacity: 1;
+}
+
+.image-visivel {
+    opacity: 0; /* Inicialmente invisível */
+}
+
+.personagem-img:hover .image-silhueta {
+    opacity: 0;
+    border-radius: 8px;
+}
+
+.personagem-img:hover .image-visivel {
+    opacity: 1;
+    border-radius: 8px;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 2s;
+}
+
+.personagens-container:nth-child(2) {
+    transition-delay: 1000ms;
+}
+
+.personagens-container:nth-child(3) {
+    transition-delay: 2000ms;
+}
+
+.personagens-container:nth-child(4) {
+    transition-delay: 3000ms;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 3em;
+}
+
+.mapa-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3em;
+    padding: 8px;
+}
+
+.mapa-card p {
+    font-family: var(--fonte-primaria);
+    color: var(--branco);
+    font-size: 25px;
+    padding: 10px;
+}
+
+.mapa-card a {
+    background-color: var(--cor-secundaria);
+    color: var(--branco);
+    padding: 30px;
+    border-radius:0 0 100px 100px;
+    border: 1px solid var(--cor-ouro);
+    font-family: var(--fonte-secundaria);
+    font-size: 25px;
+    transition: 0.5s ease;
+}
+
+.mapa-card a:hover {
+    color: var(--cor-ouro);
+    border-radius: 100px;
+    transition: 0.5s ease;
+}
+
+.mapa-img {
+    width: 40em;
+    height: 25em;
+    margin: 20px 0 50px 0;
+}
+
+.trechos {
+    margin: 5em;
+    font-family: var(--fonte-primaria);
+    font-size: 25px;
+    color: var(--cor-de-fundo);
+}
+
+.trecho__texto {
+    background-color: var(--cor-terciaria);
+    margin: 30px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.589);
+    text-shadow: 1px 1px 10px var(--branco);
+    text-align: justify;
+}
+
+.trechos:nth-child(2) {
+    transition-delay: 2s;
+}
+
+.trechos:nth-child(3) {
+    transition-delay: 3s;
+}
+
+.trechos:nth-child(4) {
+    transition-delay: 4s;
+}
+
+footer {
+    background-color: var(--cor-secundaria);
+    border: 1px solid var(--cor-ouro);
+    margin-bottom: 5px;
+    padding: 10px 0;
+}
+
+h2 {
+    font-family: var(--fonte-primaria);
+    font-size: 15px;
+    color: var(--branco);
+    padding: 30px 40px 0 30px;
+}
+
+h2 a {
+    font-family: var(--fonte-secundaria);
+    font-size: 30px;
+    border-right: 1px solid var(--cor-ouro);
+    padding: 20px 20px 0 10px;
+}
+
+footer p {
+    color: var(--branco);
+    font-family: var(--fonte-primaria);
+    font-size: 15px;
+    padding: 30px;
+}
